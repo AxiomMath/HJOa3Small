@@ -1,0 +1,28 @@
+name = "hjoa3small"
+version = "0.1.0"
+defaultTargets = ["HJOA3"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+autoImplicit = false # no "assume a typo is a new variable"
+relaxedAutoImplicit = false # no "assume a typo is a new variable"
+maxSynthPendingDepth = 3 # same as mathlib, changes behaviour of typeclass inference
+weak.linter.flexible = true # no rigid tactic (e.g. `exact`) after a flexible tactic (e.g. `simp`)
+# Enable all mathlib linters: automatically matches what mathlib uses.
+weak.linter.mathlibStandardSet = true
+# Like Axiomlib, files here extend Mathlib/Axiomlib files and omit copyright headers.
+weak.linter.style.header = false
+
+[[require]]
+name = "QSeriesLib"
+git = "https://github.com/AxiomMath/QSeriesLib.git"
+rev = "v4.33.0-rc2"
+
+[[lean_lib]]
+name = "HJOA3"
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "Solution"

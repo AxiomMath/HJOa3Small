@@ -1,0 +1,19 @@
+/.lake
+
+# Development scratch file (carries `sorry` while a proof is being built)
+/HJOA3/Scratch.lean
+
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pdf
+*.synctex.gz
+*.toc
+__pycache__/
+*.pyc
+blueprint/hjoa3.tex
+blueprint/hjoa3.pdf
+_site/
